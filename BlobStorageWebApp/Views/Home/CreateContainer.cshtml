@@ -1,0 +1,33 @@
+﻿@model BlobStorageWebApp.Models.BlobContainerModel
+
+@{
+    ViewData["Title"] = "CreateContainer";
+}
+
+<h1>CreateContainer</h1>
+
+<h4>BlobContainer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateContainer">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BlobContainerName" class="control-label"></label>
+                <input asp-for="BlobContainerName" class="form-control" />
+                <span asp-validation-for="BlobContainerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Container">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

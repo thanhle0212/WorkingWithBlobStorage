@@ -1,0 +1,15 @@
+﻿@model BlobStorageWebApp.Models.BlobContainerModel
+
+@{
+    ViewData["Title"] = "DeleteContainer";
+}
+
+<h1>DeleteContainer</h1>
+
+<h3>Are you sure you want to delete @Model.BlobContainerName ?</h3>
+<form asp-action="DeleteContainer">
+
+    @Html.HiddenFor(model => model.BlobContainerName)
+    <input type="submit" value="DeleteContainer" class="btn btn-danger" /> |
+    <a asp-action="Container">Back to List</a>
+</form>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<BlobStorageWebApp.Models.BlobModel>
+
+@{
+    ViewData["Title"] = "ListBlob";
+    var containerName = ViewBag.ContainerName;
+}
+
+<h1>ListBlob</h1>
+
+<p>
+    @Html.ActionLink("Upload New blob", "UploadBlob", new { containerName = @containerName})
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BlobName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlobURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BlobName)
+            </td>
+            <td>
+                @if (item.ContentType != "application/pdf")
+                {
+                    <img src="@item.BlobURL" width="400" height="200" />
+                }
+                else
+                {
+                    <a href="@item.BlobURL">@item.BlobURL</a>
+                }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteBlob", new { containerName = containerName, blobName = item.BlobName })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

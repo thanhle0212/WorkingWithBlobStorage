@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BlobStorageWebApp.Models.BlobContainerModel>
+
+@{
+    ViewData["Title"] = "Blob Container";
+}
+
+<h1>Blob Container</h1>
+
+<p>
+    <a asp-action="CreateContainer">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BlobContainerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlobContainerURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublicAccess)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.ActionLink(item.BlobContainerName, "ListBlob", new { containerName = item.BlobContainerName })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BlobContainerURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublicAccess)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteContainer", new { containerName = item.BlobContainerName })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

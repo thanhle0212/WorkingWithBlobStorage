@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "UploadBlob";
+    var containerName = ViewBag.ContainerName;
+}
+
+<h1>UploadBlob</h1>
+
+@using (Html.BeginForm("UploadBlob", "Home", FormMethod.Post,
+                       new { enctype = "multipart/form-data" }))
+{
+    @*@Html.("containerName", ViewBag.ContainerName)*@
+                
+    <input type="hidden" name="containerName" id="containerName" value="@containerName" />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="file">Upload Blob:</label>
+                <input type="file" name="file" id="file" style="width: 100%;" />
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Upload" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
