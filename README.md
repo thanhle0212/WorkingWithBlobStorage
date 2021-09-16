@@ -9,3 +9,9 @@ Main functions:
 - List all Blob by container 
 - Upload new blob 
 - Delete a blob.
+
+##NOTE: Make sure you update your connetion string to your storage account in appsettings.json before running
+
+  "AzureStorageAccount": {
+    "ConnectionString": "your-connection-string-here"
+  },
