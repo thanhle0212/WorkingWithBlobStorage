@@ -1,5 +1,5 @@
 # WorkingWithBlobStorage
-
+Cancel changes
 This project contains a MVC application that allows use to work with Azure Storage - Blob Storage by using Microsoft.WindowsAzure.Storage and Microsoft.WindowsAzure.Storage.Blob library.
 
 Main functions:
@@ -12,9 +12,12 @@ Main functions:
 
 # NOTE
 
-Make sure you update your connetion string to your storage account in appsettings.json before running
+Make sure you update your connetion string to your storage account in appsettings.json as well as localsettings.json before running
 
-**  "AzureStorageAccount": {
+"AzureStorageAccount": {
     "ConnectionString": "your-connection-string-here"
   },
-**
+
+ "Values": {
+    "AzureWebJobsStorage": "your connection to storage account here",
+  }
