@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "swbkKFQujLwaE+WNlgJ7qKdDjnBuG8oj16caPbIJxDMFFikly3G3anevcrV/cp9MEY6MhG65hIQtDJejH240sQ==",
+  "dgSpecHash": "3shBRuxhJJummclUhqcMqO9RlKrvHKfs7K2qOO9kdBIoV2z45VjG5ygguUeWnprPHsbMcc+ZKtkfhkmqffsu0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thanhlet\\source\\repos\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
+  "projectFilePath": "D:\\Projects\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thanhlet\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\thanhlet\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\azure.storage.blobs.12.10.0.nupkg.sha512",

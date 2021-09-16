@@ -6504,11 +6504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thanhlet\\source\\repos\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
+      "projectUniqueName": "D:\\Projects\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
       "projectName": "BlobStorageWebApp",
-      "projectPath": "C:\\Users\\thanhlet\\source\\repos\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
+      "projectPath": "D:\\Projects\\WorkingWithBlobStorage\\BlobStorageWebApp\\BlobStorageWebApp.csproj",
       "packagesPath": "C:\\Users\\thanhlet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanhlet\\source\\repos\\WorkingWithBlobStorage\\BlobStorageWebApp\\obj\\",
+      "outputPath": "D:\\Projects\\WorkingWithBlobStorage\\BlobStorageWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
